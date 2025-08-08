@@ -25,7 +25,7 @@ import {
   DialogContent,
   DialogActions
 } from '@mui/material';
-import { Add, Delete, Edit, Category } from '@mui/icons-material';
+import { Add, Delete, Category } from '@mui/icons-material';
 import { formatDate } from '../../utils/helpers';
 
 const ExpenseTab = ({ tab, onEntryAdd, onEntryDelete, onEntryUpdate }) => {

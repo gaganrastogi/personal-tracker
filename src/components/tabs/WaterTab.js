@@ -129,9 +129,7 @@ const WaterTab = ({ tab, onEntryAdd, onEntryDelete }) => {
       };
       onEntryAdd(tab.id, newEntry);
     } else if (!entry.isNew) {
-      // Update existing entry
-      const updatedEntry = { ...entry, received };
-      // This would require an onEntryUpdate prop - for now we'll just add/delete
+      // Update existing entry - for now we'll just add/delete
       if (!received) {
         onEntryDelete(tab.id, entry.id);
       }
